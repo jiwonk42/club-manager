@@ -25,4 +25,10 @@ export class MemberComponent implements OnInit {
   goToProfilePage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
   }
+
+  filterByCategory: string = "AllMembers";
+
+  onChange(optionFromMenu) {
+    this.filterByCategory = optionFromMenu;
+  }
 }
