@@ -1,18 +1,18 @@
+<br>
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Add a New Member to Inventory</h3>
+    <h3 class="panel-title">Add a New Member</h3>
   </div>
-  <div class="panel-body">
+  <br>
+  <div class="panel-body member-list">
     <div>
       <div>
         <label>Name:</label>
-        <br>
         <input #newName>
       </div>
       <br>
       <div>
         <label>Title:</label>
-        <br>
         <input #newRole>
       </div>
       <br>
@@ -22,8 +22,11 @@
         <textarea #newDescription></textarea>
       </div>
       <br>
-      <button (click)="submitForm(newName.value, newRole.value, newDescription.value); newName.value=''; newRole.value=''; newDescription.value=''">Add</button>
+      <button class="btn btn-lg btn-primary" (click)="submitForm(newName.value, newRole.value, newDescription.value); newName.value=''; newRole.value=''; newDescription.value=''">Add</button>
     </div>
+    <br>
+    <br>
+    <hr>
     <!-- Displays All Members-->
     <div>
       <app-member></app-member>
