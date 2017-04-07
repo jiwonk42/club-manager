@@ -1,0 +1,18 @@
+{
+  "members": [{
+    "name": "Jiwon",
+    "role": "President",
+    "description": "Duties: ......, Joined Since: 1998",
+    "id": "1"
+  }, {
+    "name": "Rebecca",
+    "role": "Vice President",
+    "description": "Duties: ....., Joined Since: 1200",
+    "id": "2"
+  }, {
+    "name": "Erin",
+    "role": "Treasury",
+    "description": "Duties: ....., Joined Since: 2009",
+    "id": "3"
+  }]
+}
