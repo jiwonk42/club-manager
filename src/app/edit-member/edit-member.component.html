@@ -1,3 +1,14 @@
-<p>
-  edit-member works!
-</p>
+<h4>Edit Member</h4>
+
+<label>New Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>New Title:</label>
+<input [(ngModel)]="selectedMember.role">
+<br>
+
+<label>New Description:</label>
+<input [(ngModel)]="selectedMember.description">
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>
