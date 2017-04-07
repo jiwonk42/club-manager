@@ -8,7 +8,7 @@
 <br>
 <div *ngFor="let member of members | async | category:filterByCategory" class="panel panel-default member-list">
   <div class="panel-body">
-    <h3 (click)="goToProfilePage(member)">{{member.name}}</h3>
+    <h2 (click)="goToProfilePage(member)">{{member.name}}</h2>
     <div *ngIf="currentRoute === '/admin'">
       {{member.role}}
       {{member.description}}

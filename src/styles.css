@@ -45,16 +45,21 @@ html body {
 }
 
 .page-heading {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .member-list {
-  margin-top: 25px;
-  padding: 5px;
+  margin-top: 23px;
+  margin-left: 20px;
+  padding: 10px;
 }
 
 .options {
   font-size: 20px;
+}
+
+.description {
+  padding-bottom: 20px;
 }
 
 .bottom-padding {
