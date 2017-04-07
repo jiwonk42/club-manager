@@ -40,6 +40,23 @@ html body {
   font-size: 90px;
 }
 
+.container {
+  color: #333333;
+}
+
+.page-heading {
+  font-size: 50px;
+}
+
+.member-list {
+  margin-top: 25px;
+  padding: 5px;
+}
+
+.options {
+  font-size: 20px;
+}
+
 .bottom-padding {
   height: 100px;
 }

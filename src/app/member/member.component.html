@@ -1,10 +1,12 @@
-<h2>All Members</h2>
-<select (change)="onChange($event.target.value)">
+<h1 class="page-heading">Our Members</h1>
+<br>
+<select (change)="onChange($event.target.value)" class="options">
   <option value="AllMembers" selected="selected">All Members</option>
   <option value="Staff">Staff</option>
   <option value="Member">Other Members</option>
 </select>
-<div *ngFor="let member of members | async | category:filterByCategory" class="panel panel-default">
+<br>
+<div *ngFor="let member of members | async | category:filterByCategory" class="panel panel-default member-list">
   <div class="panel-body">
     <h3 (click)="goToProfilePage(member)">{{member.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">
