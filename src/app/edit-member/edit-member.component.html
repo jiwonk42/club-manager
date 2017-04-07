@@ -1,15 +1,16 @@
-<h4>Edit Member</h4>
-
+<h2>Edit Member</h2>
+<br>
 <label>New Name:</label>
 <input [(ngModel)]="selectedMember.name">
 <br>
-
+<br>
 <label>New Title:</label>
 <input [(ngModel)]="selectedMember.role">
 <br>
-
+<br>
 <label>New Description:</label>
 <input [(ngModel)]="selectedMember.description">
-
-<button (click)="beginUpdatingMember(selectedMember)">Update</button>
-<button (click)="beginDeletingMember(selectedMember)">Delete</button>
+<br>
+<br>
+<button class="btn btn-lg btn-success" (click)="beginUpdatingMember(selectedMember)">Update</button>
+<button class="btn btn-lg btn-danger" (click)="beginDeletingMember(selectedMember)">Delete</button>

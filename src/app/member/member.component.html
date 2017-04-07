@@ -8,10 +8,10 @@
 <br>
 <div *ngFor="let member of members | async | category:filterByCategory" class="panel panel-default member-list">
   <div class="panel-body">
-    <h2 (click)="goToProfilePage(member)">{{member.name}}</h2>
+    <h1 (click)="goToProfilePage(member)">{{member.name}}</h1>
     <div *ngIf="currentRoute === '/admin'">
-      {{member.role}}
-      {{member.description}}
+      <h2>Position: {{member.role}}</h2>
+      <h3>Description: {{member.description}}</h3>
       <hr>
       <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>
