@@ -18,6 +18,6 @@ export class AdminComponent implements OnInit {
 
   submitForm(name: string, role: string, description: string) {
     var newMember: Member = new Member(name, role, description);
+    this.memberService.addMember(newMember);
   }
-
 }
