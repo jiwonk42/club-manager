@@ -1,3 +1,49 @@
+html body {
+  background-color: #fcf8e3;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container-fluid {
+  height: 90px;
+  padding: 20px;
+}
+
+.jumbotron {
+  height: 650px;
+  margin-top: -20px;
+  background-image: url('animals.jpg');
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.9;
+}
+
+#logo {
+  color: #872121;
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+#about {
+  color: #1b722e;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+#admin {
+  font-size: 40px;
+}
+
+#statement {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+}
+
+.bottom-padding {
+  height: 100px;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -5,4 +51,5 @@
   height: 60px;
   background-color: #f5f5f5;
   padding: 15px;
+  font-size: 20px;
 }
