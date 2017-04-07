@@ -10,9 +10,14 @@ import { Member } from '../member.model';
 })
 export class MemberProfileComponent implements OnInit {
 
-  constructor() { }
+  memberId: number = null;
+
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.memberId = parseInt(urlParameters['id']);
+    });
   }
 
 }
