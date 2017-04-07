@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Member } from '../member.model';
 
 @Component({
   selector: 'app-admin',
@@ -10,6 +11,10 @@ export class AdminComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  submitForm(name: string, role: string, description: string) {
+    var newMember: Member = new Member(name, role, description);
   }
 
 }
